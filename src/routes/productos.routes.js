@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { productoCtrl } from '../controllers/productos.controllers';
+import productoCtrl  from '../controllers/productos.controllers';
 
 //mision manejar las rutas
 
@@ -7,4 +7,6 @@ const newRouter= Router();
 
 //crear ruta
 
-newRouter.route("/products").get('aqui agregar la funcion correspondiente');
+newRouter.route("/products").get(productoCtrl.listarProductos);
+
+export default newRouter;
