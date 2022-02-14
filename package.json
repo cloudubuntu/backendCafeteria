@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "practica de conceptos de backend",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "start": "babel-node src/index.js",
     "babel-node": "babel-node --presets=env",
     "dev": "nodemon --exec npm run babel-node ./src/index.js"
@@ -23,6 +23,7 @@
     "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
+    "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
   }
 }

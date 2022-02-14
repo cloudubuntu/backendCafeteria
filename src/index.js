@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import  path  from 'path';
 import newRouter from './routes/productos.routes';
+import './database';
 
 newRouter
 

@@ -7,6 +7,7 @@ const newRouter= Router();
 
 //crear ruta
 
-newRouter.route("/products").get(productoCtrl.listarProductos);
+newRouter.route("/products").get(productoCtrl.listarProductos).post(productoCtrl.crearProducto);
+
 
 export default newRouter;
